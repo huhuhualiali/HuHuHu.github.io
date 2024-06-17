@@ -1,0 +1,155 @@
+.box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* 设置元素边框圆角为10像素 */
+    border-radius: 10px;
+    /* 添加一个浅灰色的阴影效果，阴影偏移量为0，模糊半径为5像素，透明度为0.75 */
+    box-shadow: 0px 0px 5px 0px rgba(190, 190, 190, 0.75);
+    height: 1050px;
+}
+
+div .box .keep p{
+    padding :5px 60px;
+    /* 设置文本行高为1.6倍字体大小 */
+    line-height: 1.6rem;
+    font-size:1.1rem;
+}
+
+/* 设置包含在 .box 和 .keep 类中的表格样式 */
+div .box .keep table{
+    /* 表格宽度为900像素 */
+    width:900px;
+    /* 水平居中对齐 */
+    margin:auto;
+    /* 不显示边框 */
+    border: 0px;
+    /* 边框分离 */
+    border-collapse:separate;
+    /* 单元格间距为25像素 */
+    border-spacing: 25px;
+}
+
+div .box .keep table tr, td{
+    width: 30%;
+    border: 1px solid #8a8989;
+    background-color: #ebebeb;
+}
+
+div .box .keep table img{
+    width: 90px;
+    height: auto;
+}
+/* 设计表单的样式 */
+/* 采用凝胶布局，且往右偏移 */
+div .box .message form{
+    width:1000px;
+    margin:auto;
+    float: left;
+}
+
+
+div .box .message form{
+    width: 45%;
+    margin: 30px 60px 20px 40px;
+}
+
+div .box .message form img{
+    width: 20px;
+    height: auto;
+    padding-top: 15px;
+}
+/* 让表单的标签和输入框左对齐 */
+div .box .message form table{
+    border: none; 
+    text-align: left;
+    border-spacing: 15px;
+}
+
+div .box .message form table tr,td{
+    border: 0px;
+    background-color: transparent;
+}
+
+div .box .message form table .lab{
+    width: 10%;
+    text-align: right;
+    /* 设置标签宽度及文本右对齐 */
+}
+
+div .box .message form table .inputt-1,.writer{
+    border-radius: 10px;
+    width: 70%;
+    background-color: #ffffff;
+    /* 设置输入框和作者栏的圆角、宽度和背景色 */
+}
+
+div .box .message form table input{
+    border:0px;
+    height: 40px;
+    width: 90%;
+    background-color: #ffffff;
+    outline: none;
+    /* 设置无轮廓的输入框，使得视觉上整个表格行更像原生输入框 */
+    /* 设置输入框的边框、高度、宽度、背景色及无轮廓 */
+}
+
+div .box .message form table textarea{
+    border:0px;
+    border-radius: 10px;
+    height: 120px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0px;
+    outline: none;
+    /* 设置文本域的边框、圆角、高度、宽度、背景色、外边距及无轮廓 */
+}
+
+div .box .message .submit .check{
+    padding: 10px 30px 20px 120px;
+    color: #707070;
+    font-size: 0.9rem;
+    /* 设置提交按钮的内边距、文本颜色及字体大小 */
+}
+div .box .message .submit .button-1{
+    text-align: center;
+    /* 设置按钮文本居中对齐 */
+}
+
+/* 与前面一样的按钮效果设计 */
+button{
+    margin-top: 0px;
+    background-color: #ffcc3e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fffdfc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    height: 50px;
+    width: 160px;
+    font-size: 1.3rem;
+}
+button span{
+    transition: 0.5s;
+}
+button:hover span{
+    padding-right: 12px
+}
+
+button span:after{
+    content: "》";
+    opacity: 0;
+    transition: 0.5s;
+}
+button:hover span:after{
+    opacity: 1;
+}
+
+/* 右侧图片，也用浮动元素 */
+div .box .right-img{
+    width: 40%;
+    float:left;
+    margin:100px 20px 20px 0px  ;
+}
+
+
+

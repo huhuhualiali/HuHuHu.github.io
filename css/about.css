@@ -1,0 +1,367 @@
+body{
+    /* 设置背景图片为相对路径 */
+    background-image: url(../images/bg777.png);
+    /* 背景图片垂直方向平铺 */
+    background-repeat: repeat-y;
+    /* 背景图片大小适应容器 */
+    background-size:contain;
+}
+
+aside{
+    background-color: #e3f4c5;
+    width: 320px;
+    height: 640px;
+    /* 设置侧边栏固定位置 */
+    position: fixed;
+    /* 设置侧边栏顶部位置 */
+    top: 140px;
+    /* 设置侧边栏左侧位置 */
+    left: 70px;
+    /* 设置侧边栏边角圆润度 */
+    border-radius: 15px 50px;
+    /* 设置侧边栏阴影效果 */
+    box-shadow:5px 5px 8px 0px rgb(227, 223, 223);
+    background-color:#f2f4f9;
+}
+
+/* 上半区域的颜色设计 */
+aside .cont-1{
+    border-radius: 15px 50px 0px 0px;
+    height: 46%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* 侧边栏图片设计 */
+aside .cont-1 img{
+    width: 150px;
+    /* 图片圆形效果 */
+    border-radius: 50%;
+    margin: 35px 80px 0px 80px;
+    box-shadow:5px 5px 8px 0px rgb(81, 88, 142);
+}
+
+aside .cont-1 h2{
+    /* 文字居中 */
+    text-align: center;
+    margin-top: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+aside .cont-1 p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: #595b5f;
+    margin: 5px 0px 20px 0px;
+}
+
+aside .cont-2{
+    height: 54%;
+    border-radius: 0px 0px 15px 50px;
+}
+
+aside .cont-2-box{
+    margin: 0px;
+}
+
+aside ul{
+    /* 去除列表项的默认样式 */
+    list-style-type: none;
+    margin: 0 0 0 0px;
+    padding: 0 0 0 0px;
+}
+aside ul li{
+    font-size: 1rem;
+    border-bottom: #000000 2px dashed;
+    margin: 0 0 0 0px;
+}
+aside ul .last{
+    border-bottom: none;
+}
+aside ul li a{
+    /* 取消超链接文字下划线 */
+    text-decoration: none;
+    text-align: center;
+    /* 以块元素展现 */
+    display: block;
+    padding: 20px 15px;
+    margin: 0 0 0 0px;
+    color: #000000;
+}
+/* 鼠标悬停效果 */
+aside ul li a:hover {
+	background-color: #96b4ec;
+	border-bottom: none;
+	font-weight: bold;
+}
+/* 右侧主要内容设计 */
+div.resume .box_about{
+    width: 1000px;
+    margin-left: 450px;
+}
+
+/* 由于锚点定位被顶部固定导航栏遮住，所以需要调整*/
+div.resume .box_about #myself,#education,#skills,#habit,#travel-photo{
+    padding-top:90px; /* 设置顶部内边距为90像素，用于调整内容与顶部的距离 */
+    margin-top:-90px; /* 设置顶部外边距为负90像素，用于抵消上方的内边距，保持整体布局的顶部对齐 */
+}
+
+div.resume .box_about .box{
+    background-color: #f8f9fa;
+    width: 100%;
+    padding-bottom: 30px;
+    /* 为元素添加阴影效果，水平和垂直偏移均为0，阴影模糊半径分别为8px和20px，颜色为黑色透明度不同的rgba值 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.resume .box_about #edu-cont,#skill-cont,#habit-cont,#travel-cont{
+    margin-top: 40px ;
+}
+
+
+.title{
+    height: 40px;
+    padding: 20px 20px 10px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+}
+ .title img{
+    padding-top: 5px;
+    height: 32px;
+    width: auto;
+    /* 垂直居上，保持文字和图片在同一水平线上 */
+    vertical-align: text-top; 
+}
+.title span{
+    /* 垂直居中 */
+    vertical-align: middle; 
+}
+
+
+div.resume .box_about #myself .content p{
+    padding: 0px 50px 10px 50px;
+    font-size: 1rem;
+    color: #535353;
+    line-height: 1.6em;
+}
+
+div #myself .content table{
+    border: #595b5f 1px dashed;
+    font: #000000 1.2rem ;
+    margin: 10px 60px 30px 60px;
+    width: 85%;
+    height: 200px;
+    /* 表格边框合并 */
+    border-collapse: collapse;
+}
+
+div #myself .content table tr,td{
+    background-color: #f2f4f9;
+    /* 虚线边框 */
+    border: #595b5f 1px dashed;
+    /* 禁止元素跨越多列 */
+    column-span: none;
+    
+}
+/* 奇数列表格样式设计 */
+div  #myself .content table td:nth-child(odd){ 
+    padding-left: 10px;
+    text-align: left;
+    width: 16%;
+    background-color: #ffffff;
+}
+/* 偶数列表格样式设计 */
+div  #myself .content table td:nth-child(even){ 
+    width: 32%;
+}
+
+div #education .content{
+    padding: 0px 50px 10px 50px;
+}
+
+div  #education .content img{
+    width: 50px;
+    height: 50px;
+    /* 圆形图片 */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div  #education .content table{
+    margin-top: 20px;
+    /* 去除外边框 */
+    border: none;
+}
+
+div  #education .content table td,tr{
+    /* 设置教育内容表格单元格和行的背景颜色为透明 */
+    background-color: transparent;
+    /* 文本左对齐 */
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.6rem;
+    /* 无边框 */
+    border: 0px;
+}
+/* 调整表格各列的宽度 */
+div  #education .content table .school { 
+    width: 5%;
+}
+
+div  #education .content table .text { 
+    width: 72%;
+    font-size: 1.2rem;
+}
+
+div  #education .content table time { 
+    width: 21%;
+    font-size: 0.9rem;
+    padding-right: 5px ;
+}
+
+div  #education .content table .word { 
+    border-left: 4px dashed #1a4eb5;
+    height: 60px;
+    line-height: 1.2rem;
+    color: #656565;
+}
+
+div  #skills .content table{
+    margin: 20px 90px 20px 90px;
+    /* 移除表格的外边框 */
+    border: none;
+    width: 80%;
+    height: 450px;
+    /* 合并表格边框 */
+    border-collapse: collapse;
+}
+
+div  #skills .content table tr,td{
+    border: 0px;
+    background-color: transparent;
+    column-span: none;
+    padding: 10px;
+    width: 50%;
+}
+/* 只显示内部边框 */
+/* 对第一个表格保留右边和下面的边框 */
+div  #skills .content table .first{
+    border-right: #595b5f 2px dashed;
+    border-bottom: #595b5f 2px dashed;
+}
+/* 对于第四个表格保留左边和上面的边框 */
+div  #skills .content table .last{
+    border-left: #595b5f 2px dashed;
+    border-top: #595b5f 2px dashed;
+}
+
+div  #skills .content table .name{
+    font-size: 1.4rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+
+div  #skills .content table .discription{
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+    color: #8a8888;
+
+}
+
+
+.image-container {
+    /* 设置容器宽度为210px */
+    width: 210px; 
+    height: auto; 
+    /* 隐藏溢出内容 */
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+.image-container img {
+    /* 图片宽度为容器宽度的70% */
+    width: 70%;  
+    height: auto; 
+    /* 图片变换效果的过渡时间为0.3秒，缓动效果为ease */
+    transition: transform 0.3s ease;  
+}
+
+.image-container:hover img {
+    /* 鼠标悬停时图片放大到原来的1.5倍 */
+    transform: scale(1.5); 
+}
+div  #habit .content{
+    padding: 0px 50px 10px 50px;
+}
+
+/* 左侧图片，浮动左侧 */
+div  #habit .content .left-img{
+    width: 40%;
+    height: auto;
+    padding: 15px;
+    float: left;
+}
+/* 右侧列表，左浮动 */
+div  #habit .content .habit-list{
+    margin: 0px 10px 40px 10px ;
+    width: 45%;
+    float: left;
+}
+
+div  #habit .content .habit-list li p{
+    font-size: 0.9rem;
+}
+
+/* 清除浮动 */
+.clear {
+    clear: left; 
+}
+
+
+
+div  #travel-photo .content{
+    padding: 0px 50px 10px 50px;
+}
+
+div  #travel-photo .content .place{
+    margin: 10px 10px 10px 10px ;
+    width: 270px;
+    height: 350px;
+    background-image: url(../images/border.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* 图片框浮动布局 */
+    float: left;
+    /* 隐藏溢出内容 */
+    overflow: hidden;
+}
+
+div  #travel-photo .content .place img{
+    width: 150px;
+    height: 150px;
+    padding-top :48px;
+    padding-left: 13px;
+    padding-bottom: 8px ;
+    /* 圆角效果 */
+    border-radius: 30% 10%;
+}
+
+div  #travel-photo .content .place .txt{
+   padding: 3px 20px;
+   line-height: 0.8rem;
+}
+
+div  #travel-photo .content .place .txt time{
+    font-size: 0.9rem;
+    color: #656565;
+    padding-left: 100px;
+}
+
+/* 页尾效果 */
+footer{
+    margin-top: 30px;
+}
+

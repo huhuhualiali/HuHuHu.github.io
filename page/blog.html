@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 显示网页的图标 -->
+    <link rel="icon" href="../images/ali.png" type="image/x-icon" />
+    <!-- 链接到css文件 -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <title>Blog&Work</title>
+</head>
+<body>
+    <!-- 导航栏部分 -->
+    <nav>
+        <ul>
+            <li><span> HUHUHU <span></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG&WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- 博客部分 -->
+    <div class="blog">
+        <div class="blog-cont">
+            <!-- 博客部分标题 -->
+            <div class="box">
+                <div class="header-title">
+                    <h1>BLOG</h1>
+                </div>
+            </div>
+            <!-- 博客部分内容 -->
+            <div class="blog-a">
+                <div class="blog-item">
+                    <div class="picture">
+                        <img src="../images/blog-222.png" alt="2">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>数据库分区表</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>分区表是一种特殊的数据库表，它将数据分布在多个物理子表中，
+                            但在逻辑上仍然表现为一个单一的表。
+                            这种方式可以提高查询性能，特别是在处理大量数据时。
+                            分区表的创建需要使用SQL语言中的CREATE TABLE...PARTITION BY子句。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="picture">
+                        <img src="../images/blog-333.png" alt="3">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>数据库索引</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>
+                            索引对于数据库性能的提升很重要，其本质上是一种数据结构，
+                            可以帮助数据库系统快速定位到需要查询的数据，减少了数据库的扫描操作，提高了查询效率。
+                            创建索引的语可以使用SQL语言中的CREATE INDEX语句来实现。
+
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="picture">
+                        <img src="../images/blog-555.png" alt="4">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>汇编实验-02</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>在一个数据段中定义不同的数据类型（字符、字符串和数值）的方式，
+                            并考察其在内存中的存储情况。熟练掌握所学习的寄存器的用法，并归纳总结。
+                            通过实验，掌握了数据段的定义、寄存器的用法、内存的存储方式。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="picture">
+                        <img src="../images/blog-11111.png" alt="1">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>单臂路由</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>
+                            单臂路由是一种网络路由协议，它将网络中的所有路由器连接在一起，
+                            形成一个单一的路由器，称为单臂路由器。
+                            这种路由协议可以减少网络的复杂性，提高网络的可靠性。
+                            单臂路由器的实现方式有多种，如环形网、星型网、树型网等。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 分页 -->
+            <div class="page">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">上一页</a></li>
+                    <li><a href="#">下一页</a></li>
+                    <li><a href="#">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 作品部分 ，由于与博客部分布局差不多，所以class名字基本沿用博客部分的，只是利用id来修改了-->
+        <div class="work-cont">
+            <div class="box">
+                <div class="header-title">
+                    <h1>WORK</h1>
+                </div>
+            </div>
+            <div class="blog-a" id="work-a">
+                <div class="blog-item" id="work-item-1">
+                    <div class="picture">
+                        <img src="../images/work1.png" alt="11">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>医院管理系统</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>
+                            医院管理系统是一个基于Java的医院管理系统,
+                            它可以实现医院的各项管理功能，包括患者信息管理、
+                            医生信息管理、门诊预约管理、挂号管理等。
+                            医院管理系统的开发涉及到数据库设计、
+                            前台页面设计、后台功能实现、安全性设计。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="blog-item" id="work-item-2">
+                    <div class="picture">
+                        <img src="../images/workk.png" alt="22">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>知识图谱</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>
+                            知识图谱是一种基于图论的语义网络，它将复杂的现实世界中的实体、
+                            关系和属性联系起来，形成一个网络结构。
+                            知识图谱可以帮助人们更好地理解和处理复杂的现实世界，
+                            并为人们提供更加智能的决策支持。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="blog-item" id="work-item-3">
+                    <div class="picture">
+                        <img src="../images/work.png" alt="33">
+                    </div>
+                    <div class="blog-item-title">
+                        <p>知白守墨--电商平台</p>
+                    </div>
+                    <div class="blog-item-content">
+                        <p>
+                            知白守墨--电商平台是一个基于java的电商平台,
+                            它可以实现电商的各项管理功能，包括商品管理、
+                            订单管理、会员管理、促销管理等。
+                            知白守墨的开发涉及到数据库设计、
+                            前台页面设计、后台功能实现、安全性设计。
+                        </p>
+                    </div>
+                    <div class="last">
+                        <span>2024.6.5</span>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <!-- 分页 -->
+                <div class="page">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">下一页</a></li>
+                        <li><a href="#">尾页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 页脚部分 -->
+    <footer>
+        &copy; 2024.6.10, the website of Hujingyun
+    </footer>
+    
+</body>
+</html>
+

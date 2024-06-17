@@ -1,0 +1,203 @@
+body{
+    background-image: url(../images/bg777.png);
+    /* 背景图片竖向重复 */
+    background-repeat: repeat-y;
+    /* 设置背景图像大小以完全包含在元素内 */
+    background-size:contain;
+}
+/* 凝胶布局 */
+.blog{
+    margin: 0px auto;
+    width: 1200px;
+    background-color: #ffffff;
+}
+
+.blog-cont{
+    width:98%;
+    margin: auto;
+    margin-top: -60px;
+    padding: 65px 10px 10px 30px;
+}
+/* 标题样式设计 */
+.header-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../images/yuan.png) ;
+    background-repeat: no-repeat;
+    /* 设置背景图像大小以完全包含在元素内 */
+    background-size: contain;
+}
+
+.header-title h1{
+    padding: 4px 10px;
+    border-bottom: #a2a2a2 dashed 1px;
+}
+
+.blog-cont .blog-a{
+    padding: 40px;
+    width: 100%;
+    margin: 10px 60px 20px 80px;
+    height:100%
+}
+
+/* 浮动元素，左浮动 */
+.blog-item{
+    float: left;
+    width: 40%;
+    height: 80%;
+}
+/* 博客标题 */
+.blog-item-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 20px;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+/* 博客内容 */
+.blog-item-content{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin: 10px 20px;
+    color: rgb(135, 133, 133);
+}
+/* 博客时间与learn more按钮 */
+.last{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin: 10px 20px 60px 20px;
+    padding: 0px 10px 0px 40px ;
+    color: rgb(135, 133, 133);
+}
+/* 超链接设计 */
+.last  span{
+    color: #b5b6b8;
+    font-size: 0.8rem;
+}
+.last  a{
+    color: #a2a2a2;
+    font-size: 0.9rem;
+    text-decoration: none;
+    /* 取消超链接下划线 */
+    margin-left: 220px;
+}
+/* 设置已访问链接的颜色 */
+.last  a:visited{
+    color: #574a4a;
+}
+
+/* 设置鼠标悬停时链接的颜色 */
+.last a:hover{
+    color: #2e31dc;
+}
+
+/* 定义图片容器的样式 */
+.picture{
+    width: 420px; 
+    height: 280px; 
+    overflow: hidden; /* 隐藏溢出内容 */
+    margin:auto; /* 水平居中 */
+    border-radius: 20px; /* 圆角边框 */
+    box-shadow: 0px 0px 5px 0px rgba(190, 190, 190, 0.75); /* 添加阴影效果 */
+}
+
+/* 定义图片在容器内的样式 */
+.picture img {
+    width: 135%; 
+    height: auto; 
+    padding: 0px;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时图片的样式 */
+.picture:hover img {
+    transform: scale(1.5); /* 放大图片 */
+}
+
+
+
+
+.page{
+   clear: both;   /* 清除两侧浮动 */
+    width: 600px; /* 设置页面宽度为600px */
+    margin: 0px auto; /* 水平居中*/
+}
+
+.page li{
+    font-size: 1rem; 
+    list-style: none;  /* 去除列表项默认样式 */
+    margin: 0px 40px; 
+    float: left; /* 左浮动 */
+}
+
+.page li a{
+    color: #000000; 
+    font-size: 0.9rem; 
+    text-decoration: none;  /* 去除下划线 */
+}
+
+.page li a:hover{
+    color: #7273d6;/*  鼠标悬停时改变链接颜色 */
+}
+
+/* 作品部分的样式设计 */
+#work-a{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+#work-item-1,#work-item-2,#work-item-3{
+    width: 300px;
+    height: 480px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+
+}
+/* 调整间距 */
+.work-cont{
+    width:98%;
+    margin: auto;
+    padding: 80px 10px 10px 30px;
+    height: 100%;
+}
+#work-item-1{
+    margin-left: 30px;
+    margin-right: 10px;
+    padding-left: 110px;
+}
+#work-item-2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#work-item-3{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#work-item-1 .picture,#work-item-2 .picture ,#work-item-3 .picture{
+    width: 280px;
+    height: 210px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#work-item-1 .img,#work-item-2 .img ,#work-item-3 .img{
+    width: 120%;
+    height: 100%;
+}
+
+#work-item-1 .last a ,#work-item-2 .last a ,#work-item-3 .last a{
+    padding:10px;
+    margin-left:30px;
+}
+
+
+/* 页脚区域 */
+footer{
+    margin-top: 20px;
+}
+
+
+
+

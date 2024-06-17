@@ -1,0 +1,352 @@
+body{
+    margin: 0 0 0 0px;
+}
+/* 图片缩放设置 */
+img {
+    max-height: auto;
+    width:100% ;
+}
+
+/* 导航栏的css布局设计 */
+
+nav{
+    height: 100px; 
+    margin: 0 0 0 0px; 
+}
+/* 使得导航栏固定在顶部 */
+nav ul{
+    list-style-type: none; /* 去除列表默认样式 */
+    margin: 0 0 0 0px; 
+    width: 100%;
+    padding: 0 0 0 0px; 
+    position: fixed;  /* 固定定位 */
+    overflow: hidden;/* 设置溢出内容隐藏 */
+    z-index: 100; /* 设置层级,最上层元素 */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); /* 设置渐变背景 */
+    top: 0; /* 设置顶部位置 */
+}
+nav ul li{
+    float: left; /* 设置列表项左浮动 */
+    font-size: 1.6rem; 
+}
+nav ul li a{
+    text-decoration: none; /* 去除链接下划线 */
+    text-align: center; /* 设置文本居中 */
+    display: block; /* 设置为块级元素 */
+    padding: 20px 15px; 
+    color: #232323; 
+}
+
+nav ul li a:hover {
+    background-color: #e1e4ea; /* 设置鼠标悬停时的背景颜色 */
+    border-bottom: none; /* 去除底部边框 */
+    font-weight: bold; /* 设置字体加粗 */
+}
+
+nav ul li span{
+    text-align: center; /* 设置文本居中 */
+    color: #fffdfc; /* 设置字体颜色 */
+    display: block; /* 设置为块级元素 */
+    padding-top: 20px; 
+    padding-left: 60px; 
+    padding-right: 180px; 
+}
+/* 导航栏结束 */
+
+
+/* 主体内容的css布局设计,凝胶布局 */
+.box{
+    width: 1100px;
+    margin:0px auto;
+}
+
+/* 背景内容 */
+div#home{
+    height: 600px;
+    margin-top: 0px;
+    background-image: url(../images/bg7.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+/* 左侧内容布局 */
+div#home .left{
+    width: 550px;
+    height: 600px;
+    margin-left: 40px;
+    float: left;
+}
+
+div#home .left p{
+    font-size: 3.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 150px;
+}
+
+/* 增加按钮的效果 */
+div#home .left button{
+    margin-top: 20px;
+    background-color: #ffcc3e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fffdfc;
+    border: none;
+    border-radius: 10px;  /* 圆角效果 */
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); /* 在边框上加上阴影效果  */
+    height: 60px;
+    width: 180px;
+    font-size: 2rem;
+    padding: 30 40 40 40px;
+}
+div#home .left button span{
+    /* 为按钮内的文本设置0.5秒的过渡效果 */
+    transition: 0.5s;
+}
+div#home .left button:hover span{
+    /* 鼠标悬停时增加文本右边的内边距 */
+    padding-right: 12px
+}
+
+div#home .left button span:after{
+    /* 在按钮文本后添加内容“》”，初始不透明度为0 */
+    content: "》";
+    opacity: 0;
+    /* 为添加的内容设置0.5秒的过渡效果 */
+    transition: 0.5s;
+}
+
+div#home .left button:hover span:after{
+    /* 鼠标悬停时增加添加内容的透明度 */
+    opacity: 1;
+}
+
+/* 右侧内容布局 */
+div#home .right{
+    width: 460px;
+    height: 600px;
+    float: left;
+}
+
+div#home .right img{
+    margin-top: 25px;
+}
+/* 标题指示+标题效果设置 */
+div.line{
+    margin-top: 0px;
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+div.line .box{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+div.line .box img{
+    width: 100px;
+    height: auto; 
+}
+div.line .box span{
+    font-size: 2.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 介绍部分的设计 */
+div#introduction{
+    height: 555px;
+    background-color: #ffffffdc;
+    margin-bottom: 50px;
+}
+
+div#introduction #MBIT{
+    height: 505px;
+    width: 500px;
+    margin-left: 10px;
+    background-color: #f8f9fa;
+    float: left;
+    padding:20px;
+    /* 设置元素边框圆角为10像素 */
+    border-radius: 10px;
+    /* 添加元素阴影效果，偏移量为5px 5px，模糊半径为8px，颜色为浅灰色 */
+    box-shadow:5px 5px 8px 0px rgb(209, 208, 208);
+}
+
+div#introduction #brief-introduction{
+    height: 505px;
+    width: 500px;
+    margin-left: 45px;
+    background-color: #f8f9fa;
+    padding:20px;
+    /* 浮动元素 */
+    float: left; 
+    /* 设置元素边框圆角为10像素 */
+    border-radius: 10px;
+    /* 添加元素阴影效果，偏移量为5px 5px，模糊半径为8px，颜色为浅灰色 */
+    box-shadow:5px 5px 8px 0px rgb(209, 208, 208);
+}
+div#introduction #brief-introduction p{
+    width: 480px;
+    padding: 5px;
+}
+div#introduction #brief-introduction a{
+    padding-left: 75%;
+}
+
+div#introduction #brief-introduction blockquote{
+    font-style: italic;
+    width: 400px;
+    background-color: #d2d3d6;
+    padding: 15px;
+    line-height: 1.8rem;
+    border-left: #ffc45f solid 5px;
+}
+/* 与前面一样的按钮效果设计 */
+div#introduction #brief-introduction  button{
+    margin-top: 20px;
+    background-color: #12216a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fffdfc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    height: 40px;
+    width: 130px;
+    font-size: 0.95rem;
+}
+div#introduction #brief-introduction button span{
+    transition: 0.5s;
+}
+div#introduction #brief-introduction button:hover span{
+    padding-right: 12px
+}
+
+div#introduction #brief-introduction button span:after{
+    content: "》";
+    opacity: 0;
+    transition: 0.5s;
+}
+div#introduction #brief-introduction button:hover span:after{
+    opacity: 1;
+}
+
+div#introduction #MBIT .con {
+    width: 320px;
+    background-color: #ffffff;
+    height: 2px;
+}  
+
+div#introduction #MBIT .progress {
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: rgb(22, 48, 133);
+}
+
+/* 进度条效果设计 */
+div#introduction #MBIT .f1 {
+    width: 35%;  /* 设置元素宽度为35% */
+    background-color: #8cc0d1;  /* 设置背景颜色为#8cc0d1 */
+}
+div#introduction #MBIT .f2 {width: 56%; background-color: #eece88;}
+div#introduction #MBIT .f3 {width: 53%; background-color: #84c8ab;}
+div#introduction #MBIT .f4 {width: 69%; background-color: #b7a0c2;}
+div#introduction #MBIT .f5 {width: 43%; background-color: #f79ea0;}
+
+
+/* 用表格来装下MBIT */
+div#introduction #MBIT table {
+    border-spacing: 5px;
+    margin-bottom: 0px;
+  }
+  td, th {
+    padding: 3px;
+    text-align:center
+  }
+
+
+  /* 作品和博客部分 */
+div.latest{
+    height: 400px;
+    background-color: #ffffff;
+}
+
+
+div.latest .work{
+    margin-bottom:60px;
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-top: 0px;
+    width: 280px;
+    height: 380px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* 向左浮动 */
+    float: left;
+    border-radius: 10px;
+    box-shadow:5px 5px 8px 0px rgb(209, 208, 208);
+}
+
+/* 超链接效果设计 */
+div.latest .work img{
+    height: 140px;
+    width: auto;
+}
+
+div.latest .work span{
+    color: #b5b6b8;
+    font-size: 0.8rem;
+}
+div.latest .work a{
+    color: #a2a2a2;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-left: 120px;
+}
+/* 改变访问后和悬停时的颜色 */
+div.latest .work a:visited{
+    color: #574a4a;
+}
+
+div.latest .work a:hover{
+    color: #2e31dc;
+}
+
+/* 类似的按钮效果 */
+
+div.line .box button {
+    background-color: #12216a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fffdfc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    height: 40px;
+    width: 120px;
+    float: right;
+}
+div.line .box button span{
+    transition: 0.5s;
+    font-size: 0.9rem;
+}
+div.line .box button:hover span{
+    padding-right: 12px
+}
+
+div.line .box button span:after{
+    content: "》";
+    opacity: 0;
+    transition: 0.5s;
+}
+div.line .box button:hover span:after{
+    opacity: 1;
+}
+
+/* 页脚区域 */
+footer {
+    background-color: #d6deed;
+    color:            #726f6f;
+    text-align:       center;
+    height: 30px;
+    padding:          15px;
+    font-size:        90%;
+    clear: left;
+    margin: 200px 0px 0px 0px;
+}
