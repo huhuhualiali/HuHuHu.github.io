@@ -338,7 +338,9 @@ div.line .box button span:after{
 div.line .box button:hover span:after{
     opacity: 1;
 }
-
+.clear{
+    clear:left;
+}
 /* 页脚区域 */
 footer {
     background-color: #d6deed;
