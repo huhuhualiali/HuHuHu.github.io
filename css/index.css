@@ -339,7 +339,7 @@ div.line .box button:hover span:after{
     opacity: 1;
 }
 .clear{
-    clear:left;
+    clear:both;
 }
 /* 页脚区域 */
 footer {
